@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  national_id: 
+  email: MyString
+  telephone: 
+  price: 
+
+two:
+  fullname: MyString
+  national_id: 
+  email: MyString
+  telephone: 
+  price: 

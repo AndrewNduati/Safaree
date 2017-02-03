@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tourist_id: 
+  insider_id: 
+  activities: MyText
+  rating: 
+
+two:
+  tourist_id: 
+  insider_id: 
+  activities: MyText
+  rating: 

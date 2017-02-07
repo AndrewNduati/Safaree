@@ -16,7 +16,7 @@ class InsidersController < ApplicationController
 			redirect_to @insider
 
 		else
-			render 'new'
+			render plain: @insider.errors
 		end
 	end
 

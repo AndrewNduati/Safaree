@@ -1,0 +1,51 @@
+<% provide(:title, "New Insider") %>
+<div class="wrapper container">
+  <div class="row">
+  	<div class="col-md-2">
+		<span> </span>
+	</div>
+    <div class="col-md-10">
+		<h1>Creating a New Insider</h1>
+	</div>
+	<!-- <div class="col-md-2">
+		<span> </span>
+	</div> -->
+	</div>
+
+	<div class="row">
+		
+		<div class="col-md-2">
+			<span> </span>
+		</div>
+
+		<div class="col-md-8">
+			
+			<%= form_for :insider, url: insiders_path do |f| %>
+			
+			<p>
+				<%= f.label :fullname %><br>
+			    <%= f.text_field :fullname,  class: 'form-control' %><br>
+			    <%= f.label :Email %><br>
+			    <%= f.text_field :email,  class: 'form-control' %><br>
+			    <%= f.label :Telephone%><br>
+			    <%= f.text_field :telephone,  class: 'form-control' %><br>
+			    <%= f.label :National_id%><br>
+			    <%= f.text_field :national_id,  class: 'form-control' %><br>
+			    <%= f.label :price %><br>
+			    <%= f.text_field :price,  class: 'form-control' %><br>
+
+
+			   
+			</p>
+			<p>
+				<%= f.submit "Create Insider",class: 'btn btn-primary' %>
+			</p>
+
+			<% end %>
+		</div>
+
+		<div class="col-md-2">
+			<span> </span>
+		</div> 
+	</div>
+</div>

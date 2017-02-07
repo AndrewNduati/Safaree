@@ -14,6 +14,14 @@ class TouristsController < ApplicationController
 
 	def create
 		@tourist = Tourist.new(tourist_params)
+
+		if @tourist.save
+
+			redirect_to @tourist
+		else
+
+			render plain: @tourist.errors
+		end
 	end
 
 	def update

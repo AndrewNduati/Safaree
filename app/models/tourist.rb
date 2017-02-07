@@ -1,7 +1,7 @@
 class Tourist < ApplicationRecord
 	
 	before_save { email.downcase! }
-
+	# Regex for the pattern that emails 
 	Reg_email = /\A[\w+\-.]+@[a-z\d\-.]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 	
 	validates :fullname,

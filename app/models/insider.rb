@@ -12,7 +12,8 @@ class Insider < ApplicationRecord
 	 
 	 validates :email, 
 	 			presence: true, 
-	 			format: { with: Reg_email, message: "This is not a valid  Email Address"}, uniqueness: { case_sensitive: false }
+	 			format: { with: Reg_email, message: "This is not a valid  Email Address"}, 
+	 			uniqueness: { case_sensitive: false }
 
 	 validates :telephone, 
 	 			presence: true,
